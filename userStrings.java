@@ -6,26 +6,23 @@ public class userStrings {
 
 	public static void main(String[] args) throws IOException {
 		String userInput = "";
-		String file = "userStrings.txt";
+		String file = "userStrings.txt"; 
 
 		Scanner scan = new Scanner(System.in);
 
 		FileWriter writer = new FileWriter(file);
 
-		System.out.println("Enter strings and type \"done\" when youre done:");
+		System.out.println("Enter strings and type \"DONE\" when youre done:");
 
-		//takes user input until they type "done"
+		// program terminates when you type "done"
 		while (!userInput.equalsIgnoreCase("DONE")) {
 			userInput = scan.nextLine();
-			if (!userInput.equalsIgnoreCase("DONE")) {
-				System.out.println("Enter strings and type \"done\" when youre done:");
-				writer.write(userInput + "\n"); //sends to file
+			if (!userInput.equalsIgnoreCase("DONE")) { 
+				System.out.println("Enter strings and type \"DONE\" when youre done:");
+				writer.write(userInput + "\n"); 
 			}
-
 		}
 		scan.close();
 		writer.close();
-
 	}
-
 }
