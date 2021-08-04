@@ -12,13 +12,13 @@ public class userStrings {
 
 		FileWriter writer = new FileWriter(file);
 
-		System.out.println("Enter strings and type \"DONE\" when youre done:");
+		System.out.println("Enter strings and type \"DONE\" when you're done:");
 
 		// program terminates when you type "done"
 		while (!userInput.equalsIgnoreCase("DONE")) {
 			userInput = scan.nextLine();
 			if (!userInput.equalsIgnoreCase("DONE")) { 
-				System.out.println("Enter strings and type \"DONE\" when youre done:");
+				System.out.println("Enter strings and type \"DONE\" when you're done:");
 				writer.write(userInput + "\n"); 
 			}
 		}

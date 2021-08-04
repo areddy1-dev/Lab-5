@@ -14,7 +14,7 @@ public class Input {
 		Scanner reader = new Scanner(
 				new File("C:\\Users\\R ANAND\\OneDrive\\Desktop\\Lewis University\\Programming Fundamentals\\week5\\input.csv"));
 
-		System.out.println("Maximum Values");
+		System.out.println("Maximum Values:");
 
 		while (reader.hasNextLine()) {
 			arr = reader.nextLine().split(",");
